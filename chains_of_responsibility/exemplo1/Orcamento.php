@@ -18,7 +18,7 @@ class Orcamento{
     }
 
     public function adicionaItem(Item $item) {
-       array_push($this->itens, $item);
+       $this->itens[] = $item;
     }
 
 }
