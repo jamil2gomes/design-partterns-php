@@ -8,8 +8,7 @@ require 'CalculadorDeDescontos.php';
 $calculador = new CalculadorDeDescontos();
 
 $orcamento = new Orcamento(300.0);
-$orcamento->adicionaItem(new Item("CANETA", 150.0));
-$orcamento->adicionaItem(new Item("LAPIS", 50.0));
+$orcamento->adicionaItem(new Item("CANETA", 150.0), new Item("LAPIS", 50.0) );
 
 $desconto = $calculador->calcula($orcamento);
 
