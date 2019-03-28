@@ -1,9 +1,9 @@
 <?php
 
-require_once 'Artigo.php';
-require_once 'Blog.php';
-require_once 'ArtigoBuilder.php';
-require_once 'BlogBuilder.php';
+require_once 'AutoLoad.php';
+
+
+
 
 $blog = BlogBuilder::builder()
                     ->autor('Jamil')

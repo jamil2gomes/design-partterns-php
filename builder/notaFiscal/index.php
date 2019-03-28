@@ -1,8 +1,5 @@
 <?php
-require_once 'Item.php';
-require_once 'NotaFiscal.php';
-require_once 'NotaFiscalBuilder.php';
-
+require 'AutoLoad.php';
 
 $nota =  NotaFiscalBuilder::builder()
                             ->empresa('Empresa X')
