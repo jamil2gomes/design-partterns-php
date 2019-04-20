@@ -9,7 +9,7 @@ class DoubleRoomBooking implements Booking{
 
     public function getDescription(): string
     {
-        return 'double room';
+        return 'you got a double room';
     }
 
 }
