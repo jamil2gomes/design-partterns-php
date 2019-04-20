@@ -10,7 +10,7 @@ class Multiplicacao extends Operadores
         return $resultadoDaEsquerda * $resultadoDaDireita;
     }
 
-    public function aceita(Impressora $impressora){
+    public function aceita(Visistor $impressora){
         $impressora->visitaMultiplicacao($this);
     }
 }

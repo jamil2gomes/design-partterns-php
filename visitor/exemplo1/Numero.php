@@ -15,7 +15,7 @@ class Numero implements Expressao{
         return $this->valor;
     }
 
-    public function aceita(Impressora $impressora){
+    public function aceita(Visitor $impressora){
         $impressora->visitaNumero($this);
     }
 }

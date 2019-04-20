@@ -10,7 +10,7 @@ class Subtracao extends Operadores{
         return $resultadoDaEsquerda - $resultadoDaDireita;
     }
 
-    public function aceita(Impressora $impressora){
+    public function aceita(Visitor $impressora){
         $impressora->visitaSubtracao($this);
     }
 }

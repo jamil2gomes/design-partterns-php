@@ -1,6 +1,6 @@
 <?php
 
-class Impressora{
+class Impressora implements Visitor{
 
     public function visitaSoma(Soma $soma){
         echo "(";

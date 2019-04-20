@@ -20,11 +20,11 @@ spl_autoload_register("carregaClasse");
 $esquerda = new Soma(new Numero(2), new Numero(3));
 $direita = new Soma(new Numero(3) , new Numero(4));
 
-$impressora = new Impressora();
+$visitor = new Impressora();
 
 $expressao = new Soma($esquerda, $direita);
 
-$expressao->aceita($impressora);
+$expressao->aceita($visitor);
 
 echo " = ";
 
@@ -35,10 +35,10 @@ echo "<br>";
 $esquerda = new Soma(new Numero(3), new Numero(8));
 $direita = new Subtracao(new Numero(10) , new Numero(3));
 
-$impressora2 = new Impressora();
+$visitor2 = new Impressora();
 $expressao2 = new Subtracao($esquerda, $direita);
 
-$expressao2->aceita($impressora2);
+$expressao2->aceita($visitor2);
 
 echo " = ";
 

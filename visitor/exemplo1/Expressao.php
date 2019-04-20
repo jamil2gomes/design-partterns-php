@@ -3,5 +3,5 @@
 interface Expressao{
 
     public function avalia();
-    public function aceita(Impressora $impressora);
+    public function aceita(Visitor $impressora);
 }
